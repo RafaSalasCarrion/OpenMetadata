@@ -1,0 +1,14 @@
+source:
+  type: query-log-lineage
+  serviceName: VERISURESOUTH_BICORE
+  sourceConfig:
+    config:
+      type: DatabaseLineage
+      queryLogFilePath: https://github.com/RafaSalasCarrion/OpenMetadata/blob/main/Test_linaje.csv
+sink:
+  type: metadata-rest
+  config: {}
+workflowConfig:
+  openMetadataServerConfig:
+    hostPort: http://10.185.65.14:8585/
+    authProvider: ${AUTHORIZER_CLASS_NAME:-org.openmetadata.service.security.DefaultAuthorizer}
