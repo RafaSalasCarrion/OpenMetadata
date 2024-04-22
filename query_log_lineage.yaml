@@ -11,4 +11,4 @@ sink:
 workflowConfig:
   openMetadataServerConfig:
     hostPort: http://10.185.65.14:8585/
-    authProvider: ${AUTHORIZER_CLASS_NAME:-org.openmetadata.service.security.DefaultAuthorizer}
+    authProvider: openmetadata
