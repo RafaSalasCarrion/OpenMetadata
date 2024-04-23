@@ -4,7 +4,7 @@ source:
   sourceConfig:
     config:
       type: DatabaseLineage
-      queryLogFilePath: https://github.com/RafaSalasCarrion/OpenMetadata/blob/main/Test_linaje.csv
+      queryLogFilePath: ./Test_linaje.csv
 sink:
   type: metadata-rest
   config: {}
