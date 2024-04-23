@@ -1,6 +1,6 @@
-﻿query_text
+﻿query_text,database_name,schema_name
 "insert into aux_rel_zip_ccoste (s#ins)
   select s#ins
   from ma_installations
   where s#ins not in (select s#ins from ##total)" 
-  "commit"
+  "commit",db_odin,sh_main
